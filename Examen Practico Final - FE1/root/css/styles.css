@@ -139,7 +139,8 @@ h1{
     justify-content: space-between;
     align-content: center;
     position: absolute;
-    top: 817px;    
+    top: 822px;    
+    left: 0;
     background-color: #8B48BF;
     color: #FFFF;    
     height: 168px;
@@ -173,19 +174,33 @@ h1{
 
 /* Listado */ 
 
-.listado{ 
-    
+.contenedorListado{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
     position: absolute;
-    top: 1000px; 
+    top: 990px; 
     left: 0px;
     right: 150px;
-    background-color:  #FAFAFA;    
-    height: 428px;
+    background-color: #FAFAFA;    
+    height: 540px;
     padding: 40px, 0px, 40px, 0px;
+    width: 98%; 
+    
+        
 
 }
 
-.listado nav button {
+.cajaLista {
+    position: relative;
+    left: 100px;
+    width: 470px;
+    margin: 70px 60px ;
+    margin-top: 0;    
+    
+}
+
+.contenedorListado nav button {
     background-color: #8B48BF;
     color: #FFFFFF;
     font-weight: 500;
@@ -193,89 +208,197 @@ h1{
     width: 70px;
     border-radius: 30px;
     border-style: hidden;
-
+    position: relative;
+    right: 100px;
+    bottom: -50px;
 }
 
-.listado nav h3 { 
+
+
+.contenedorListado nav h3 { 
     color: #323851;
     font-weight: 700;
+    
+    
 
 }
 
-.listado nav p { 
+.contenedorListado nav p { 
     color: #B3B2B7;
-    width: 437px;
+    width: 440px;
     height: 104px;
     line-height: 26px;
 
 }
 
-.listado nav {
+/* Cards jugadores */ 
+
+.contenedorCards {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    top: 1600px; 
+    left: 0px;
+    right: 150px;
+    background-color: #FAFAFA;    
+    height: 500px;    
+    width: 1400px;   
+}
+
+.jugadores { 
+    height: 220px;
+    width: 430px;
+    left: 92px;
 
 }
 
+.contenedorCards img { 
+    position: relative;
+    left: 180px;
+    
+}
 
-
-
-/* Cards jugadores */ 
-
-.cards h2{ 
+.contenedorCards h2 {
     position: absolute;
-    top: -200px;
-    left: 600px;
+    top: 20px;
+    font-size: 40px;
+    color: #242E53;
     text-align: center;
 
 }
 
-.cards { 
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    
-    top: 1680px;
+.contenedorCards h3 {
+    text-align: center;
+    color:#3F4868 ;
+    font-weight: 700;
+}
 
-     
+.contenedorCards p {
+    text-align: center;
+    color:#B9B9C1;
+}
+
+.contenedorCards button { 
+    position: absolute;
+    bottom: 50px;
+    border-style: hidden;
+}
+
+.contenedorCards button:hover { 
+
+    background: rgba(139, 72, 191, 0.7); 
 
 }
 
-.cards button{ 
 
-    position: absolute;
-    top: 300px;
-    left: 700px;
-    
-}
-
+/* SALTOMORADO N° 2 */
 
 .saltoMorado2 {
-
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
     position: absolute;
-    
+    background-color:#8B48BF;
+    width: 1400px;
+    height: 224px;
     top: 2168px;
-    
 
+}
+
+.saltoMorado2 h2 { 
+    position: relative;
+    top: 10px;
+    left: 165px;
+    right: 400px;    
+    font-size: 40px;
+    color: #FFFFFF; 
+    width: 35%;
+    font-weight: 590;
+
+}
+
+.saltoMorado2 button { 
+    color:#8B48BF; 
+    background-color:#FFFFFF ;
+    font-size: 14px;
+    border-style: hidden;
+    position: absolute;
+    top: 90px; 
+    left: 1070px;
 
 }
 
 
-footer{
+
+/* pie de pagina */ 
+
+.contenedorPiepagina{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
     position: absolute;
+    background-color:#1E1E26 ;
+    top: 2500px;
+    width: 1400px;
+    height: 250px;
     
-    top: 2392px;
-    
+} 
 
+.navegacion { 
+    border: 1px solid red;
+    width: 270px;
+    
 
 }
+
+.logo { 
+    border: 1px solid red;
+    position: absolute;
+    left: 167px;
+    top: 54px;
+}
+
+.navegacion1 { 
+    border: 1px solid red;
+    position: absolute; 
+    bottom: 70px;
+    left: 170px;
+}
+
+.contenedorPiepagina ul { 
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.contenedorPiepagina input{ 
+    border-radius: 50px;
+    width: 200px;
+    height: 44px;
+    color: #A0A0A0;
+
+}
+
+.contenedorPiepagina button {
+    border-style: hidden;
+    width: 63px;
+    height: 42px;
+    font-size: 13px;
+    
+}
+
+.contenedorPiepagina p { 
+    position: absolute;
+    bottom: 10px;
+    right: 160px;
+    font-size: 12px;
+    color:#8C8C94 ;
+}
+
+
     
 
 
