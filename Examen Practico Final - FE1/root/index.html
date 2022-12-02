@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <header> 
-        <img src="./img/logo.svg" alt="logoSportit">
-        <ul type=none class="listaMenu" >
+    <header class="contenedorHeader"> 
+        <img class="logoHeader" src="./img/logo.svg" alt="logoSportit">
+        <ul type=none class="listaHeader" >
             <li>Sports</li>
             <li>Products</li>
             <li>About Us</li>
@@ -28,7 +28,7 @@
 
     <section class="jugadorPadel">
         <img src="./img/padel-intro.png" alt="jugadorPadel">
-        <div>
+        <div class="contenidoPadel">
             <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free </h1>
             <p>The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
             <button class="boton">Contact</button>
@@ -43,25 +43,34 @@
 
     <section class="contenedorListado">
         <nav class="cajaLista">
-            <button>01</button>
-            <h3>Track company-wide progress</h3>
+            <section class="headerCaja">
+                <button>01</button>
+                <h3>Track company-wide progress</h3>
+            </section>
             <p>Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
         </nav>
         <nav class="cajaLista">
-            <button>02</button>
-            <h3>Advance built-in reports</h3>
+            <section class="headerCaja">
+                <button>02</button>
+                <h3>Advance built-in reports</h3>
+            </section>
             <p>Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
         </nav>
         <nav class="cajaLista">
-            <button>03</button>
-            <h3>Everything you need in one place</h3>
+            <section class="headerCaja">
+                <button>03</button>
+                <h3>Everything you need in one place</h3>
+            </section>
             <p>Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
         </nav>
 
     </section>
     
-    <section class="contenedorCards"> 
+    <section class="tituloCards">
         <h2>Best of the month</h2>
+
+        <section class="contenedorCards"> 
+        
             <article class="jugadores"> 
                 <img src="./img/avatar-sanyo.png" alt="perfilSanyo">
                 <h3>Sanyo</h3>
@@ -82,8 +91,11 @@
 
             </article>
 
+        </section>
+
             <button class="boton">More</button>
 
+        
     </section>
 
     <section class="saltoMorado2">
@@ -94,28 +106,23 @@
     </section>
 
     <footer class="contenedorPiepagina">
-        <section class="logo">
-            <img src="./img/logo.svg" alt="logoSportit">
-        </section>
-        
-        <section class="navegacion1">
-            <img src="./img/icon-facebook.svg" alt="facebook">
-            <img src="./img/icon-youtube.svg" alt="youtube">
-            <img src="./img/icon-twitter.svg" alt="twitter">
-            <img src="./img/icon-pinterest.svg" alt="pinterest">
-            <img src="./img/icon-instagram.svg" alt="instagram">
+        <section class="imagenesFooter">
+            <img class="logo" src="./img/logo.svg" alt="logoSportit">        
+            <img class="redesSociales" src="./img/icon-facebook.svg" alt="facebook">
+            <img class="redesSociales" src="./img/icon-youtube.svg" alt="youtube">
+            <img class="redesSociales" src="./img/icon-twitter.svg" alt="twitter">
+            <img class="redesSociales" src="./img/icon-pinterest.svg" alt="pinterest">
+            <img class="redesSociales" src="./img/icon-instagram.svg" alt="instagram">
         </section>
 
-        <nav class="navegacion">
+        <nav class="linksFooter">
             <ul type="none">
                 <li>Home</li>
                 <li>Pricing</li>
                 <li>Products</li>
                 <li>About Us</li>
             </ul>
-        </nav>
-
-        <nav class="navegacion">
+        
             <ul type="none">
                 <li>Trainning</li>
                 <li>Community</li>
@@ -123,15 +130,16 @@
             </ul>
         </nav>
 
-        <nav class="navegacion">
+        <nav class="navegacionFooter">
             <form action="" method="post"> 
                 <input type="text" name="Update" placeholder="Update in your inbox...">
                 <button class="boton">Go</button>
 
-            </form>
-        </nav>
+            </form>        
 
         <p>Copyright 2020. All Rights Reserved</p>
+
+        </nav>
 
     </footer>
 
