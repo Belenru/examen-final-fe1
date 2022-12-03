@@ -50,7 +50,9 @@ body {
 
 }
 
-
+.menuMobile { 
+    display: none;
+}
 
 
 /* Jugador padel */
@@ -103,7 +105,7 @@ h1{
 }
 
 .jugadorPadel button {    
-    top: 420px;
+    margin-top: 20px;
     border-style: hidden;
 
 
@@ -114,7 +116,7 @@ h1{
 
 /* Salto morado n° 1  */ 
 
-.saltoMorado { 
+.contenedorSaltopag1 { 
     display: flex;    
     justify-content: space-around;
     align-items: center;
@@ -127,18 +129,18 @@ h1{
 
 }
 
-.saltoMorado h2{ 
+.contenedorSaltopag1 h2{ 
     font-size: 36px;
     width: 35%;
     font-weight: 550;
     margin-left: 5%;
 }
 
-.saltoMorado p{   
+.contenedorSaltopag1 p{   
     text-align: center;
     font-size: 16px;
     width:30% ;
-    top: 20px;
+    margin-top: 20px;
     line-height: 151%;
     font-weight: 200; 
 
@@ -270,7 +272,7 @@ h1{
 
 /* SALTOMORADO N° 2 */
 
-.saltoMorado2 {
+.contenedorSaltopag2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -283,7 +285,7 @@ h1{
 
 }
 
-.saltoMorado2 h2 {        
+.contenedorSaltopag2 h2 {        
     font-size: 40px;
     color: #FFFFFF; 
     width: 35%;
@@ -291,7 +293,7 @@ h1{
 
 }
 
-.saltoMorado2 button { 
+.contenedorSaltopag2 button { 
     color:#8B48BF; 
     background-color:#FFFFFF ;
     font-size: 14px;
@@ -302,6 +304,10 @@ h1{
 
 
 /* pie de pagina */ 
+
+.copyright-mobile {
+    display:none;
+}
 
 .contenedorPiepagina{
     display: flex;
@@ -380,4 +386,191 @@ h1{
 
 
 
+
+@media screen and (max-width: 480px) {
+    
+    /* Header version mobile */
+
+    .listaHeader, header button {
+        display: none;
+        }    
+
+    .menuMobile {
+        display: inline;
+
+    }
+
+    /* Jugador Padel version mobile */
+
+    .jugadorPadel {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 90px;
+        flex-wrap: wrap;
+    }
+
+    .jugadorPadel img {
+        border-top: 10px;
+        width: 100%;
+    }
+
+    .contenidoPadel { 
+        width: 400px;
+        height: 570px;
+        align-items: flex-end;
+        
+    }
+
+    .contenidoPadel h1 {
+        margin-top: 114px;
+        width: 480px;
+        height: 200px;
+    }
+
+    .contenidoPadel p {
+        width: 430px;
+    }
+   
+    /* Salto de pagina version mobile */
+
+    .contenedorSaltopag1 {
+        background-color: #3CDDF3;
+        flex-direction: column;
+        justify-content: space-between;        
+        height: 340px;
+        width: 480px;
+        padding: 34px;
+        margin-left: -9.5px;
+    }
+
+    .contenedorSaltopag1 h2 {         
+        width: 440px;             
+    }
+   
+    .contenedorSaltopag1 p {         
+        width: 470px;
+            
+    }
+
+    /* Listado version mobile */
+
+    .contenedorListado {
+        background-color: #FFFFFF;
+        height: 913px;        
+    }
+
+    .contenedorListado nav h3 {
+        margin-left: -17px;
+        width: 470px;
+        background-color: rgba(139, 72, 191, 0.3);
+        height: 41px;
+        text-align: start;   
+        padding-top: 8px;     
+        padding-inline-start: 25px;
+    }
+
+    .cajaLista p {
+        margin-left: 55px;
+        width: 400px;
+        line-height: 26px;
+    }
+
+    .headerCaja {
+        margin-left: 47px;
+    }
+
+    .contenedorListado nav button {
+        width: 90px;
+        margin-top: 18px;
+    }
+
+    /* Cards version mobile */
+
+.tituloCards {
+    width: 480px;
+}
+
+.card-no-mobile {
+    display: none;
+}
+
+.contenedorCards {
+    width: 480px;
+}
+
+.contenedorCards p {
+    width: 470px;
+    margin-left: -40px;
+}
+
+.jugadores {
+    margin-left: -8px;
+}
+
+/* Salto de pagina n2 version mobile */
+
+.contenedorSaltopag2{
+    background-color: #3CDDF3;    
+    justify-content: center;   
+    align-items: center;     
+    height: 360px;
+    width: 480px;
+    padding: 34px;
+    margin-left: -9.5px;
+    flex-wrap: wrap;
+}
+
+.contenedorSaltopag2 h2 {
+    width: 350px;
+    width: 284px;    
+    text-align: center;
+    height: 206px;
+}
+
+.contenedorSaltopag2 button {
+    background-color: #232C50;
+    color: #FFFFFF;
+}
+
+/* Pie de página version mobile */
+
+.contenedorPiepagina {
+    width: 480px;
+    height: 360px;
+    margin-left: -9px;
+}
+.linksFooter {
+    width: 408px;
+    width: 316px;
+}
+
+.imagenesFooter {
+    order: 1;
+    width: 320px;
+    flex-flow: wrap-reverse;
+    height: 85px;
+}
+
+.navegacionFooter {
+    order: -1;
+}
+
+.logo {
+    width: 410px;
+}
+
+footer .copyright-desktop {
+    display: none;
+}
+
+.copyright-mobile { 
+    display: inline;
+    text-align: center;
+    margin-bottom: 2px;
+    order:2;
+}
+
+
+
+}
 
